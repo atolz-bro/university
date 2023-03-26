@@ -1,0 +1,42 @@
+<html>
+  <head>
+    
+    <style>
+      label {
+        display: block;
+        margin-top: 20px;
+      }
+      input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        width: 300px;
+        margin-top: 10px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    </style>
+   
+
+  </head>
+  <body>
+    <form action="form_handler.php" method="post" id="form">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required><br>
+      
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required><br>
+      <span class="error" id="email-error"></span><br>
+      
+      <input type="submit" value="Submit">
+
+    </form> 
+  </body>
+
+  
+</html>
